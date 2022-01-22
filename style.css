@@ -1,0 +1,514 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+
+/* Menu */
+
+.header{
+    position: fixed;
+    top: 0;
+    left:-31rem;
+    z-index: 1000;
+    height: 100%;
+    width: 20rem;
+    padding: 2rem;
+    /* background: #2659; */
+    background:rgb(2, 2, 27);
+    font-family: poppins;
+    transition: ease 1s;
+}
+
+.header h1{
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.navbar{
+    padding: 30% 0;
+}
+
+.navbar ul{
+    display: block;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    transition: 1s;
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+#menu-btn{
+    position: fixed;
+    top: 5rem;
+    left: 2rem;
+    color: white;
+    font-size: 40px;
+    line-height: 5rem;
+    cursor: pointer;
+    z-index: 1100;
+    display: inline-block;
+}
+
+.active{
+    left: 0;
+}
+
+.logo{
+    margin-top: -50px;
+}
+
+
+
+
+
+
+
+
+
+/* header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+
+.sticky {
+    position: fixed;
+    background-color: rgb(2, 2, 27);
+    padding: 20px 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 1s;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: -40px;
+    transition: 1s;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 40px;
+    font-family: poppins;
+    transition: 1s;
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.A{
+    color: aliceblue;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.active{
+    top: 30px;
+} */
+
+/* Banner */
+
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./imgMF/fundo3G.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    font-family: poppins;
+    color: aliceblue;
+    text-align: center;
+}
+
+.conteudo h2{
+    font-weight: 300;
+    font-size: 58px;
+}
+
+/* Sobre */
+
+.sobre{
+    padding: 100px;
+    width: 100%;
+}
+
+.sobreFlex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteudoS{
+    color: aliceblue;
+    font-family: poppins;
+    padding-right: 65px;
+}
+
+.conteudoS h2{
+    margin-bottom: 10px;
+}
+
+.conteudoS p{
+    max-width: 400px;
+}
+
+.sobreFlex img{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+}
+
+/* Produtos */
+
+.produtos{
+    padding: 100px;
+}
+
+.secao1Flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.produto1{
+    font-family: poppins;
+    color: aliceblue;
+    border:1px solid rgb(82, 11, 11);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.produto1:hover{
+    background-color: white;
+    color: black;
+}
+
+.produto1 img{
+    width: 40%;
+    height: 40%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+
+/* Serviços */
+
+.servicos{
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.servicoFlex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conteudoSV{
+    background-color: rgb(2, 2, 27);
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudoSV h2{
+    color: aliceblue;
+    font-family: poppins;
+}
+
+.S{
+    font-size: 45px;
+    color: whitesmoke;  
+    margin-bottom: 15px;
+}
+
+
+/* Avaliações */
+
+.avaliacoes{
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.avaliFlex{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border:1px solid rgb(82, 11, 11);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avaliFlex p{
+    color: aliceblue;
+    font-family: poppins;
+    max-width: 400px;
+}
+
+.avaliFlex img{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.avaliConteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.avaliConteudo h2,h3{
+    color: aliceblue;
+    font-family: poppins;
+    margin-right: 30px;
+}
+
+.flexA2{
+    display: flex;
+}
+
+.flexA2 img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Contato */
+
+.contato{
+    padding: 100px;
+}
+
+.contatoForm{
+    background-color: rgb(2, 2, 27);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contatoForm h2{
+    color: aliceblue;
+    font-family: poppins;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contatoForm input[type="text"]{
+    display: block;
+    margin-bottom: 15px;
+    width: 220px;
+    height: 50px;
+    background: none;
+    border:none;
+    color: aliceblue;
+    border:1px solid rgb(82, 11, 11);
+    text-align: center;
+}
+
+.contatoForm input[type="submit"]{
+    display: block;
+    margin-bottom: 15px;
+    width: 220px;
+    height: 50px;
+    background: none;
+    font-size: 20px;
+    border:none;
+    color: aliceblue;
+    border:1px solid rgb(82, 11, 11);
+    font-family: Righteous;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contatoForm input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+}
+
+.contatoForm input[type="text"],textarea:focus{
+    outline: none;
+}
+
+textarea{
+    width: 220px;
+    height: 90px;
+    resize: none;
+    background: none;
+    border:none;
+    color: aliceblue;
+    border:1px solid rgb(82, 11, 11);
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+
+/* Fim */
+
+footer{
+    width: 100%;
+    height: 280px;
+    background-color: rgb(2, 2, 27);
+}
+
+.fimFlex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menuF a{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: poppins;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.menuF a:hover{
+    color: red;
+}
+
+.socials{
+    color: aliceblue;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.SC{
+    margin-left: 12px;
+    transition: 1s;
+}
+
+.SC:hover{
+    color: red;
+}
+
+.copyright{
+    color: aliceblue;
+    font-family: poppins;
+    border-top: 1px solid rgb(82, 11, 11);
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Media */
+
+
+@media (max-width:991px){
+
+    .produto1 img{
+        width: 100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .avaliacoes{
+        flex-wrap: wrap;
+    }
+
+    .avaliConteudo{
+        width: 100%;
+    }
+
+    .flexA2 img{
+        width: 40%;
+        height: 40%;
+        object-fit: contain;
+        margin-left: -50px;
+    }
+
+    .contatoForm{
+        margin-left: -50px;
+    }
+
+    .sobreFlex{
+        flex-direction: column;
+    }
+
+    .sobreFlex img{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    footer{
+        height: 340px;
+    }
+
+    .copyright{
+        padding-bottom: 20px;
+    }
+
+}
