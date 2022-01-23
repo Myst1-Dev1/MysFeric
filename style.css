@@ -463,6 +463,11 @@ footer{
     padding-top: 20px;
 }
 
+.copyright a{
+    text-decoration: none;
+    color: red;
+}
+
 /* Media */
 
 
