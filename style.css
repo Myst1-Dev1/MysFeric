@@ -475,6 +475,10 @@ footer{
 
 
 @media (max-width:991px){
+    
+    .sobre{
+        padding: 100px 40px;
+    }
 
     .produtos{
         padding: 100px 50px;
