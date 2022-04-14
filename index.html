@@ -3,318 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./imgMF/logo2att.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Righteous&family=Shizuru&family=Smooch&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MysFeric</title>
+    <link rel="icon" href="./imgMF/logo2att.png" type="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Mysferic</title>
 </head>
 <body>
-
-
-    <!-- Menu -->
-
-
-    <div id="menu-btn">
-        <i class="fas fa-bars A"></i>
-    </div>
-
-    <header class="header">
-        <h1>MysFeric</h1>
+    
+    <header>
+        <div class="img-container-logo">
+            <img src="./imgMF/logo2att.png" alt="">
+        </div>
 
         <nav class="navbar">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#destaques">Destaques</a></li>
                 <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#prime">Prime</a></li>
                 <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#avaliacoes">Avaliações</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
 
-        <img class="logo" src="./imgMF/logo2att.png" alt="logo">
+        <div class="icons-menu">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i onclick="showSearch()" class="fa-solid fa-magnifying-glass"></i>
+            <i id="menu" class="fa-solid fa-bars A"></i>
+        </div>
 
     </header>
 
-    <!-- <img class="logo" src="./imgMF/logo2att.png" alt="logo">
+    <!-- search -->
 
-    <header>
-        
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#avaliacoes">Avaliações</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-
-        </nav>
-
-        <i id="menu-btn" class="fas fa-bars A"></i>
-    </header> -->
-
+    <div class="search">
+        <input id="search" type="text" placeholder="Busque aqui ...">
+    </div>
 
     <!-- Banner -->
 
-    <section class="banner">
-        <div class="conteudo">
-        <h2>Bem vindo</h2>
-        <p>Os Melhores preços você encontra aqui</p>
+    <div class="banner">
+
+        <div class="banner-flex">
+        <div class="conteudo-banner">
+            <h2>Os Melhores Equipamentos para sua gameplay</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+        </div>
+
+        <img src="./imgMF/mthh-removebg-preview (1).png" alt="">
+
+    </div>
+    </div>
+
+
+    <!-- Destaques -->
+
+    <section class="destaques" id="destaques">
+
+        <h2 class="pb-5">Destaques</h2>
+
+        <div class="produtoFlex row">
+
+            <div class="produto">
+                <img class="produtoIMG img-fluid" src="./imgMF/processador-intel-core-i3-10100f-cache-6mb-4-30-ghz-lga-1200-i3-10100f_1603394030_m-removebg-preview.png" alt="">     
+                <p>Processador Intel Core i3-10100F, Cache 6MB, 4.30 GHz, LGA 1200</p>
+                <h3><del> R$950,00 </del></h3>
+                <h2>R$473,00</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+
+            <div class="produto">      
+                <img class="produtoIMG img-fluid" src="./imgMF/microfone-gamer-hyperx-quadcast-s-led-usb-preto-e-vermelho-hmiq1s-xx-rg-g_1602169933_gg-removebg-preview.png" alt="">     
+                <p>Microfone Gamer HyperX QuadCast S, Antivibração, LED RGB, USB</p>
+                <h3><del> R$1200,00 </del></h3>
+                <h2>R$747,00</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+            
+            <div class="produto">    
+                <img class="produtoIMG img-fluid" src="./imgMF/mntor-removebg-preview.png" alt="">     
+                <p>Monitor Gamer Asus TUF 23.6, Curvo, 165 Hz, Full HD, 1ms, Adaptive Sync</p>
+                <h3><del> R$2250,00 </del></h3>
+                <h2>R$1150,00</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+
+            <div class="produto"> 
+                <img class="produtoIMG img-fluid" src="./imgMF/ipo-removebg-preview.png" alt="">     
+                <p>iPhone 13 Pro 128GB Grafite, Tela de 6.1, Câmera Tripla 12MP - MLV93BZ/A</p>
+                <h3><del> R$9050,00 </del></h3>
+                <h2>R$6325,00</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+
+            <div class="produto">
+                <img class="produtoIMG img-fluid" src="./imgMF/plac-removebg-preview.png" alt="">     
+                <p>Placa de Vídeo ZOTAC GAMING GeForce RTX 3060 Twin Edge  15 Gbps, 12GB</p>
+                <h3><del> R$3576,00 </del></h3>
+                <h2>R$2213,00</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+
+        </div>
+
+        <!-- Mais procurados -->
+
+        <h2 class="pb-5 py-5">Mais Procurados</h2>
+
+        <div class="produtoFlex row">
+
+            <div class="produto">
+                <img class="produtoIMG img-fluid" src="./imgMF/teclado2.png" alt="">     
+                <p>Teclado Gamer Multimidia Crusader Preto Fortrek G RGB USB</p>
+                <h3><del> R$249,99 </del></h3>
+                <h2>R$128,49</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+
+            <div class="produto">      
+                <img class="produtoIMG img-fluid" src="./imgMF/mouse1.png" alt="">     
+                <p>Mouse Gamer Fortrek G Crusader, RGB, 6 Botões, 7200DPI - 70526</p>
+                <h3><del> R$148,40 </del></h3>
+                <h2>R$78,90</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+            
+            <div class="produto">    
+                <img class="produtoIMG img-fluid" src="./imgMF/h1-removebg-preview.png" alt="">     
+                <p>Headset Gamer Redragon Zeus X RGB USB 7.1 Surround Sound Virtual H510-RGB</p>
+                <h3><del> R$250,00 </del></h3>
+                <h2>R$123,00</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+
+            <div class="produto"> 
+                <img class="produtoIMG img-fluid" src="./imgMF/ntbook-removebg-preview.png" alt="">     
+                <p>Notebook Gamer Acer Nitro 5 Intel Core i5-10300H, GeForce GTX 1650, 8GB RAM</p>
+                <h3><del> R$6050,00 </del></h3>
+                <h2>R$4325,00</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+
+            <div class="produto">
+                <img class="produtoIMG img-fluid" src="./imgMF/pcg-removebg-preview.png" alt="">     
+                <p>PC Gamer Skul 3000 I3-10100F, Radeon RX 550, 8GB DDR4, SSD 240GB, 500W PFC</p>
+                <h3><del> R$3576,00 </del></h3>
+                <h2>R$2213,00</h2>
+                <button> <i class="fa-solid fa-cart-shopping"></i> Comprar </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Prime -->
+
+    <section class="prime" id="prime">
+        <div class="prime-background">
+        <div class="primeFlex1">
+            <img src="./imgMF/logo2att.png" alt="">
+            <div class="prime-conteudo">
+            <h2>ASSINE O PRIME E SE TORNE UM DRAGÃO</h2>
+            <h2>CONFIRA OS BENEFICIOS</h2>
+        </div>
+        </div>
+
+        <div class="primeFlex2">
+            <div class="icons-prime">
+                <div class="icons-conteudo bd">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <p>Promoções <br> exclusivas</p>
+                </div>
+                <div class="icons-conteudo bd">
+                    <i class="fa-solid fa-percent"></i>
+                    <p>Desconto no  frete</p>
+                </div>
+                <div class="icons-conteudo bd">
+                    <i class="fa-solid fa-rocket"></i>
+                    <p>Entrega mais  rapida</p>
+                </div>
+                <div class="icons-conteudo bd">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>Atendimento  priorizado</p>
+                </div>
+                <div class="icons-conteudo bd">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>Cupoms em  dobro</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="primeFlex3">
+            <div class="prime-conteudo2">
+                <h2>TA ESPERANDO O QUE?</h2>
+                <div class="assinatura bd">
+                    <h2>Assine Já !</h2>
+                    <p>Aproveite esse benefício do Mysferic! e tenha ofertas, desconto no frete,
+                         atendimento exclusivo e cupons em dobro em todas as promoções do Mysferic!.</p>
+                         <h2>R$19,90</h2>
+                         <button>Quero ser Prime</button>
+                </div>
+            </div>
+        </div>
     </div>
     </section>
 
-    <!-- Sobre -->
-
-    <section class="sobre" id="sobre">
-        <div class="sobreFlex">
-            <div class="conteudoS">
-                <h2>Os melhores 
-                   equipamentos <br> para sua GamePlay</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-            </div>
-            <img src="./imgMF/sobreimg.png" alt="equipamentoF">
-        </div>
-    </section>
-
-
-    <!-- Produtos -->
-
-    <section class="produtos" id="produtos">
-
-        <div class="produtoFlex">
-        <div class="secao1Flex">
-            <div class="produto1">
-                <img src="./imgMF/tecladord.png" alt="tecladord">
-                <h2>Teclado Gamer ReDragon</h2>
-                <h3>R$ 62,45</h3>
-            </div>
-
-            <div class="produto1">
-                <img src="./imgMF/teclado2.png" alt="teclado2">
-                <h2>Teclado Gamer Crusader</h2>
-                <h3>R$ 72,00</h3>
-            </div>
-
-        </div>
-
-
-        <div class="secao1Flex">
-            <div class="produto1">
-                <img src="./imgMF/mouse1.png" alt="mouse1">
-                <h2>Mouse Gamer ForTrek</h2>
-                <h3>R$ 53,70</h3>
-            </div>
-
-            <div class="produto1">
-                <img src="./imgMF/mouse2.png" alt="mouse2">
-                <h2>Mouse Gamer C3Tech</h2>
-                <h3>R$ 87,90</h3>
-            </div>
-
-        </div>
-
-
-        <div class="secao1Flex">
-            <div class="produto1">
-                <img src="./imgMF/h2g-removebg-preview.png" alt="hd1">
-                <h2>HeadSet Gamer DF</h2>
-                <h3>R$ 39,70</h3>
-            </div>
-
-            <div class="produto1">
-                <img src="./imgMF/h1-removebg-preview.png" alt="h2">
-                <h2>HeadSet Gamer ReDragon</h2>
-                <h3>R$ 62,45</h3>
-            </div>
-
-        </div>
-
-    </div>
-
-    </section>
-
+    <!-- Serviços -->
 
     <section class="servicos" id="servicos">
+
+        <h2 class="pb-5 subtitu">Serviços</h2>
+
         <div class="servicoFlex">
-            <div class="conteudoSV">
+            <div class="servico1 bd">
                 <i class="fas fa-wrench S"></i>
                 <h2>Conserto De <br> Equipamentos</h2>
             </div>
 
-
-            <div class="conteudoSV">
+            <div class="servico1 bd">
                 <i class="fas fa-user-shield S"></i>
-                <h2>Atendimento <br> ao Cliente</h2>
+                <h2>Atendimento ao <br> Cliente</h2>
             </div>
 
-
-            <div class="conteudoSV">
+            <div class="servico1 bd">
                 <i class="fas fa-hand-holding-usd S"></i>
                 <h2>Ótimos <br> Preços</h2>
             </div>
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faq" id="faq">
+        <h2 class="subtitu">Faq</h2>
+
+        <div class="faqFlex">
+
+            <div class="faq-container bd">
+                <details>
+                    <summary>A Mysferic é confiavel?</summary>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's</p>
+                </details>
+            </div>
+
+            <div class="faq-container bd">
+                <details>
+                    <summary>Os produtos são de qualidade?</summary>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's</p>
+                </details>
+            </div>
+
+
+            <div class="faq-container bd">
+                <details>
+                    <summary>Qual é o prazo de entrega?</summary>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's</p>
+                </details>
+            </div>
+
+            <div class="faq-container bd">
+                <details>
+                    <summary>Como funciona os serviços?</summary>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's</p>
+                </details>
+            </div>
+
+            <div class="faq-container bd">
+                <details>
+                    <summary>Quais são nossos diferenciais?</summary>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's</p>
+                </details>
+            </div>
 
         </div>
     </section>
-
-
-    <!-- Avaliações -->
-
-
-    <section class="avaliacoes" id="avaliacoes">
-        <div class="avaliFlex">
-            <div class="flexA2">
-            <div class="avaliConteudo">
-                <h2>Lorem Ipsum</h2>
-                <h3>Gamer Profissional</h3>
-                
-            </div>
-
-            <img src="./imgMF/brtt.jpg" alt="">
-
-        </div>
-
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-             been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-              a galley of type and scrambled it to make a type specimen book.</p>
-
-              <img src="./imgMF/stars5.png" alt="">
-            </div>
-
-            <!--  -->
-
-            <div class="avaliFlex">
-                <div class="flexA2">
-                <div class="avaliConteudo">
-                    <h2>Lorem Ipsum</h2>
-                    <h3>Gamer Profissional</h3>
-                    
-                </div>
-    
-                <img src="./imgMF/brtt.jpg" alt="">
-    
-            </div>
-
-    
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                 been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                  a galley of type and scrambled it to make a type specimen book.</p>
-    
-                  <img src="./imgMF/stars5.png" alt="">
-    
-                </div>
-
-                <!--  -->
-
-                <div class="avaliFlex">
-                    <div class="flexA2">
-                    <div class="avaliConteudo">
-                        <h2>Lorem Ipsum</h2>
-                        <h3>Gamer Profissional</h3>
-                        
-                    </div>
-        
-                    <img src="./imgMF/brtt.jpg" alt="">
-        
-                </div>
-        
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                     been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                      a galley of type and scrambled it to make a type specimen book.</p>
-        
-                      <img src="./imgMF/stars5.png" alt="">
-          
-                    </div>
-
-    </section>
-
-
-    <!-- Contato -->
-
-    <section class="contato" id="contato">
-            <div class="contatoForm">
-                <h2>Envie Uma <br> Mensagem</h2>
-                <form>
-                    <input type="text" name="nome" placeholder="Nome">
-                    <input type="text" name="email" placeholder="Email">
-                    <textarea name="mensagem" placeholder="Mensagem"></textarea>
-                    <input type="submit" placeholder="Enviar">
-                </form>
-            </div>
-    </section>
-
 
     <!-- Fim -->
 
-    <footer>
-        <section class="fim">
-            <div class="fimFlex">
-                <img src="./imgMF/logo2att.png" alt="logoFT">
+    <section class="fim">
+        <div class="fimFlex">
 
-                <div class="menuF">
-                    <a href="#">Inicio</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#servicos">Serviços</a>
-                    <a href="#avaliacoes">Avaliações</a>
-                    <a href="#contato">Contato</a>
-                </div>
+            <div class="img-footer">
+            <img src="./imgMF/logo2att.png" alt="">
+        </div>
 
-                <div class="socials">
-                    <i class="fab fa-whatsapp SC"></i>
-                    <i class="fab fa-instagram SC"></i>
-                    <i class="fas fa-envelope SC"></i>
-                    <i class="fas fa-phone SC"></i>
+            <div class="rede-social">
+                <p>Nossas Redes</p>
+                <div class="rede1">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
 
-            <div class="copyright">
-                <p> &copy; 2022. Feito por <a href="https://myst1-dev1.github.io/Myst1-Dev/"> Myst1 Dev</a> .
-                    Todos os direitos reservados. </p>
+            <div class="menu-footer">
+                <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#prime">Prime</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                </ul>
             </div>
 
-        </section>
+            <div class="atendimento">
+                <div class="atendimento-flex">
+                Atendimento
+                <p>Horário de atendimento:
+                    08:00 às 20:00 -
+                    Segunda a Sábado,
+                    horário de Brasília
+                    (Exceto domingo e feriados)</p>
+                <p>Endereço:
+                    Rua silva, 0467 -
+                    3° andar - Centro
+                    RJ - CEP: 45869-412</p>
+                    <p>Central SAC:
+                        (59) 4002-8922
+                        E-mail:
+                        mystferic@hotmail.com</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <p>@2022 Feito por <a href="https://myst1-dev1.github.io/Myst1-Dev/">Myst1 Dev</a> Todos os direitos reservados</p>
     </footer>
-    
-
-
-
-
-    <!-- -->
-
-    <script type="text/javascript">
-
-// let menu = document.querySelector('.navbar')
-// let show = document.querySelector('#menu-btn')
-
-
-// show.onclick = () =>{
-//     menu.classList.toggle('active');
-// }
-
-      let menu = document.querySelector('#menu-btn');
-      let header = document.querySelector('.header');
-
-      menu.onclick = () => {
-        //   menu.classList.toggle('fa-times');
-          header.classList.toggle('active');
-
-      }
-
-
-
-// window.addEventListener('scroll', function() {
-//      const header = document.querySelector('header');
-//      header.classList.toggle("sticky", window.scrollY > 0);
-//     });
-
-//     </script>
 
     
+    <script src="script.js"></script>
+
 </body>
 </html>
