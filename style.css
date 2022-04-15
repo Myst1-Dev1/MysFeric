@@ -16,7 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 40px;
+    padding: 5px 40px;
     transition: 1s;
 }
 
@@ -25,7 +25,7 @@ header{
     background-color: black;
     border-bottom: 1px solid brown;
     animation:Fade 3s ease;
-    padding:30px;
+    padding:5px 40px;
 }
 
 @keyframes Fade{
@@ -36,8 +36,8 @@ header{
 
 .img-container-logo{
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .img-container-logo img{
@@ -66,7 +66,7 @@ header{
     color: aliceblue;
     font-family: 'poppins', sans-serif;
     margin-left: 55px;
-    font-size: 20px;
+    font-size: 17px;
     transition: 1s;
 }
 
@@ -138,7 +138,7 @@ header{
 /*  */
 
 .destaques{
-    padding: 40px;
+    padding:100px 40px;
 }
 
 .destaques h2{
@@ -199,7 +199,7 @@ header{
 /*  */
 
 .prime{
-    padding: 40px 0;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,7 +315,7 @@ header{
 /*  */
 
 .servicos{
-    padding: 40px;
+    padding:100px 40px;
 }
 
 .subtitu{
@@ -355,7 +355,7 @@ header{
 /*  */
 
 .faq{
-    padding: 40px;
+    padding:100px 40px;
 }
 
 .faqFlex{
