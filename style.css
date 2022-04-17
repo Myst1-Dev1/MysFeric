@@ -7,6 +7,17 @@ body{
     background-color: black;
 }
 
+::-webkit-scrollbar {
+    background-color: black;
+    box-shadow: 1px 1px 20px brown;
+    width: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5b5b5b;
+}
 
 /*  */
 
