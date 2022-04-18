@@ -344,7 +344,6 @@ header{
     padding: 10px;
     margin-bottom: 20px;
     text-align: center;
-    width: 250px;
 }
 
 .servicoFlex{
@@ -357,6 +356,12 @@ header{
 .servico1 h2{
     font-size: 25px;
 }
+
+.servico1 fieldset{
+    width: 250px;
+    padding: 10px;
+}
+
 
 .servico1 i{
     font-size: 30px;
