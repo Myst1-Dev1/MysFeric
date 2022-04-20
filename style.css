@@ -499,6 +499,10 @@ header{
         height: 220px;
         margin: auto;
     }
+
+    .prime{
+        padding: 100px 30px;
+    }
     
     .icons-conteudo{
         margin-left: 0;
