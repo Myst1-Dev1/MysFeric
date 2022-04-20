@@ -10,13 +10,12 @@ body{
 ::-webkit-scrollbar {
     background-color: black;
     box-shadow: 1px 1px 20px brown;
-    width: 8px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #5b5b5b;
+    background-color: rgb(95, 10, 10);
+    border-radius: 10px;
 }
 
 /*  */
@@ -64,19 +63,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .navbar ul{
     display: flex;
     list-style: none;
+    margin: auto;
 }
 
 .navbar ul li a{
     text-decoration: none;
     color: aliceblue;
     font-family: 'poppins', sans-serif;
-    margin-left: 55px;
+    margin-left: 35px;
     font-size: 17px;
     transition: 1s;
 }
@@ -165,17 +164,17 @@ header{
 }
 
 .produto{
-    width: 250px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    text-align: center;
     gap: 10px;
 }
 
 .produtoIMG{
-    width: 150px;
-    height: 150px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -196,7 +195,7 @@ header{
 
 .produto button{
     padding: 10px;
-    width:150px;
+    width:100%;
     border: none;
     margin-bottom: 50px;
     transition: 1s;
@@ -287,7 +286,6 @@ header{
 
 .prime-conteudo2 h2{
     margin-bottom: 20px;
-    margin-left: 10px;
 }
 
 .assinatura{
@@ -297,7 +295,6 @@ header{
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    margin-left: 25px;
 }
 
 .bd{
@@ -440,24 +437,22 @@ header{
 /*  */
 
 .copyright{
-    padding: 40px 10px;
-    background-color: rgb(4, 4, 32);
+    padding: 25px 10px;
     width: 100%;
-    height: 100px;
     color: aliceblue;
     font-family: 'poppins',sans-serif;
     text-align: center;
-    border-top: 1px solid brown;
-    box-shadow: 1px 1px 40px brown;
+    border-top: 1px solid black;
+    box-shadow: 0 0 15px brown;
 }
 
 .copyright a{
     text-decoration: none;
-    color: aliceblue;
+    color: red;
 }
 
-.copyright a:hover{
-    color: red;
+.copyright a:active{
+    color:grey;
 }
 
 @media (max-width:991px) {
@@ -502,5 +497,33 @@ header{
     .banner img{
         width: 220px;
         height: 220px;
+        margin: auto;
+    }
+
+    .icons-conteudo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 120px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .bd{
+        box-shadow: 0 0 10px brown;
+    }
+
+    .img-footer {
+        margin: auto;
+    }
+
+    .menu-footer{
+        margin: 5px 3px;
+    }
+
+    .menu-footer ul{
+        padding: 0px!important;
+        margin: 0px!important;
     }
 }
