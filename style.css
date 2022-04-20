@@ -499,8 +499,12 @@ header{
         height: 220px;
         margin: auto;
     }
+    
+    .icons-conteudo{
+        margin-left: 0;
+    }
 
-    .icons-conteudo {
+     /* .icons-conteudo {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -508,22 +512,22 @@ header{
         width: 120px;
         margin: auto;
         margin-bottom: 15px;
-    }
+    }  */
 
-    .bd{
+     /* .bd{
         box-shadow: 0 0 10px brown;
     }
 
     .img-footer {
         margin: auto;
-    }
+    } */
 
     .menu-footer{
         margin: 5px 3px;
     }
 
-    .menu-footer ul{
+    /* .menu-footer ul{
         padding: 0px!important;
         margin: 0px!important;
-    }
+    }  */
 }
