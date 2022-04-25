@@ -457,6 +457,10 @@ header{
 
 @media (max-width:991px) {
 
+    html{
+        font-size: calc(60% + 0.8vmin);
+    }
+
     header{
         padding: 10px 20px;
         flex-wrap: wrap;
@@ -465,21 +469,22 @@ header{
     .navbar{
         position: fixed;
         top: 0;
-        left: -14rem;
+        left: -18rem;
         padding: 10px;
         transition: 1s;
         height: 100%;
-        width: 220px;
-        background-color: brown;
+        width: 200px;
+        background-color: rgb(17, 0, 0);
+        border:1px solid rgb(95, 10, 10);
     }
     .navbar ul{
         display: block;
     }
 
-    .navbar ul li{
-        border: 1px solid black;
-        background-color: brown;
-        text-align: start;
+    .navbar ul li a{
+        color: aliceblue;
+        text-align: center;
+        border-width: 100%;
     }
 
     .active{
@@ -504,34 +509,15 @@ header{
         padding: 100px 30px;
     }
     
+    .prime-conteudo2{
+        text-align: center;
+    }
+
     .icons-conteudo{
         margin-left: 0;
     }
 
-     /* .icons-conteudo {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        width: 120px;
-        margin: auto;
-        margin-bottom: 15px;
-    }  */
-
-     /* .bd{
-        box-shadow: 0 0 10px brown;
-    }
-
-    .img-footer {
-        margin: auto;
-    } */
-
     .menu-footer{
         margin: 5px 3px;
     }
-
-    /* .menu-footer ul{
-        padding: 0px!important;
-        margin: 0px!important;
-    }  */
 }
